@@ -10,7 +10,6 @@ public class ReenterLockCondition implements Runnable {
     private static ReentrantLock lock = new ReentrantLock();
     private static Condition condition  = lock.newCondition();
 
-
     @Override
     public void run() {
         try{
